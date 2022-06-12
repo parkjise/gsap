@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="utf-8">
+	<title>GSAP - TimelineMax()</title>
+	<script src="js/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+	<script>
+	$(function(){
+		var timeLine = new TimelineMax();
+			timeLine.to('.tweenbox', 1, { backgroundColor: '#ddd' })
+					.to('.tweenbox', 1, { backgroundColor: 'cyan' })
+					.to('.tweenbox', 1, { backgroundColor: '#ccc' });
+	});
+	</script>
+	<style>
+		ul {display:flex;justify-content:center}
+		li.tweenbox {display:flex;justify-content:center;align-items:center;width:100px;height:100px;margin:20px;background:lightcoral;border-radius:10px;color:#fff;list-style:none}
+	</style>
+</head>
+<body>
+<ul>
+	<li class="tweenbox">1</li>
+</ul>
+</body>
+</html>

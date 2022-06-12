@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="utf-8">
+	<title>GSAP - seek()</title>
+    <script src="js/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script>
+        var tweenBox;
+    
+        function tweenStart(){
+            var motionBox = document.getElementById("tweenBox");
+            tweenBox = gsap.fromTo(motionBox, 5, { x:0, backgroundColor:'lightcoral', border:'2px solid crimson'}, {x:300, backgroundColor:'#ccc', border:'2px solid #222', borderRadius:30});
+        }
+    
+        function tweenSeek(){
+            tweenBox.seek(3);   //지정한 위치로 이동(3초 위치로)
+        }
+    </script>
+    <style>
+        .btn {display:inline-block;padding:5px 10px 6px;background-color:#333;font-size:13px;color:#fff;text-decoration:none}
+        .content {display:flex;padding:100px 30px;border:1px solid #000}
+        .tweenbox {width:100px;height:100px;border:2px solid crimson;background:lightcoral;box-sizing:border-box}	
+    </style>
+</head>
+<body>
+<a href="javascript:tweenStart();" class="btn">Start</a>
+<a href="javascript:tweenSeek();" class="btn">Seek(3)</a>
+<div class="content">
+    <div id="tweenBox" class="tweenbox"></div>
+</div>
+</body>
+</html>

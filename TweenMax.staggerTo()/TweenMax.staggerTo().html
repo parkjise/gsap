@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="utf-8">
+	<title>GSAP 메서드</title>
+	<script src="js/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+	<script>
+		function tweenStaggerTo(){
+			var m0 = document.getElementById("e0");
+			var m1 = document.getElementById("e1");
+			var m2 = document.getElementById("e2");
+			var m3 = document.getElementById("e3");
+			var m4 = document.getElementById("e4");
+			TweenMax.staggerTo([m0, m1, m2, m3, m4], 1, { rotation:180 }, 0.5);	//TweenMax.staggerTo([객체1, 객체2, 객체3], 시간, {트윈 모션}, 모션 사이의 딜레이 시간);
+		}
+	</script>
+	<style>
+		.btn {display:inline-block;padding:5px 10px 6px;background-color:#333;font-size:13px;color:#fff;text-decoration:none}
+		.content {padding:100px 30px;border:1px solid #000}
+		ul {display:flex}
+		li.tweenbox {display:flex;justify-content:center;align-items:center;width:100px;height:100px;margin:20px;background:lightcoral;border-radius:10px;list-style:none}
+	</style>
+</head>
+<body>
+<a href="javascript:tweenStaggerTo();" class="btn">Start</a>
+<div class="content">
+    <ul>
+		<li id="e0" class="tweenbox">1</li>
+		<li id="e1" class="tweenbox">2</li>
+		<li id="e2" class="tweenbox">3</li>
+		<li id="e3" class="tweenbox">4</li>
+		<li id="e4" class="tweenbox">5</li>
+	</ul>
+</div>
+</body>
+
+</html>
