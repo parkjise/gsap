@@ -1,0 +1,69 @@
+useful links:
+
+	
+Interview with Jack Doyle, Founder of GreenSock:
+https://egghead.io/podcasts/jack-doyle-creator-of-greensock
+https://code.tutsplus.com/articles/interview-with-jack-doyle-founder-of-greensock--active-2808
+
+link to greensock forum:
+https://gsap.com/community/
+
+detailed structure of GSAP:
+https://gsap.com/docs/v3/
+
+Animation examples [be guided by the start time of the animation in the lesson]:
+2:55
+https://codepen.io/shunyadezain/pen/GRNEyZW
+https://codepen.io/petebarr/pen/qBWxEaq
+https://codepen.io/crankysparrow/pen/wvMaady
+https://codepen.io/elegantseagulls/pen/eYRgXpd
+3:10
+https://codepen.io/dev_loop/pen/zYvmRvq
+3:14
+https://codepen.io/petebarr/pen/WNeEoYg
+3:18
+https://codepen.io/PointC/pen/yPbYRY
+3:20
+https://codepen.io/supah/pen/OWepLv?editors=0010
+3:24
+https://codepen.io/jh3y/pen/GRELWqJ
+3:28
+https://codepen.io/fr3d3ric/pen/wdZdbW
+3:32
+https://codepen.io/dev_loop/pen/MWKbJmO
+3:34 
+https://codepen.io/khr2003/pen/RwrPNzR?editors=0010
+3:40
+https://codepen.io/DivineBlow/pen/JjEZGme
+3:44
+https://codepen.io/natewiley/pen/dYdrjv
+3:48
+https://codepen.io/MAW/pen/WQZjzL
+3:52
+https://codepen.io/dev_loop/pen/PoZBOBx
+3:58
+https://codepen.io/visnuravichandran/pen/wvGvpwX
+4:00
+https://codepen.io/petebarr/pen/jONBMjd?editors=0010
+
+site examples:
+6:35
+https://lusion.co/about
+7:00
+https://gleec.com/coin
+7:11
+https://pinecraft.sennep.com/create/
+7:22
+https://2019.lesanimals.digital/en
+7:31
+https://advanced.team/
+7:37
+https://robindelaporte.fr/
+
+
+
+
+
+
+
+
