@@ -1,0 +1,21 @@
+the marker misses the line
+Solution: indicate the dimensions of the image of the hand with a marker:
+<image id="hand" xlink:href="https://github.com/avturin1980/GSAP/blob/main/C2L6/hand.png?raw=true" x="325" y="480" width="145" height="186"/>
+https://stackoverflow.com/questions/74286157/positioning-images-inside-an-svg-container/74441712#74441712
+_____________________________________________________________
+//Documentation
+https://greensock.com/motionpath/
+https://greensock.com/docs/v3/Plugins/MotionPathPlugin
+
+______________________________________________________________
+//Calculating path length:
+1. Way
+console.log(document.getElementById("path").getTotalLength());
+
+2. Way (Measuring the length of curves in Illustrator)
+Draw a shape and select it. Go to Window-Document info.
+In the Document info window, select the Objects section.
+
+______________________________________________________________
+//Using the advanced animation control plugin (codepen only)
+GSDevTools.create();
