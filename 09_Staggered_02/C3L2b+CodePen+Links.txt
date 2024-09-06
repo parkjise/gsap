@@ -1,0 +1,4 @@
+canvas version: Staggered animations [numerical values part1] - Interactive spinning code:
+https://codepen.io/AlexandrTyurin/pen/zYPWWrp
+
+

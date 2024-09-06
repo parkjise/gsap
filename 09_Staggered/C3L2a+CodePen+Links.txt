@@ -1,0 +1,6 @@
+Staggered animations [numerical values part1] - simplestExample:
+https://codepen.io/AlexandrTyurin/pen/vYZWKPx
+
+Staggered animations [numerical values part1] - Sensitive Surface:
+https://codepen.io/AlexandrTyurin/pen/qBjVNzZ
+
