@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: #131313;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      height: 100vh;
+    }
+    .banner{
+      aspect-ratio: calc(3 / 2);
+      width: 300px;
+      border: 1px dashed #333;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: relative;
+      /* overflow: hidden; */
+
+    }
+    .banner__panel{
+      position:absolute;
+      inset: 0 0 0 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #8457ff;
+    }
+    .banner__panel  h2{
+      font-size: 32px;
+      text-transform: uppercase;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+</head>
+<body>
+  <div class="banner">
+    <div class="banner__panel banner__panel-1">
+      <h2 class="title-1">BANNER</h2>
+      <h2 class="title-2">01</h2>
+    </div>
+    <div class="banner__panel banner__panel-2">
+      <h2 class="title-1">BANNER</h2>
+      <h2 class="title-2">02</h2>
+    </div>
+    <div class="banner__panel banner__panel-3">
+      <h2 class="title-1">BANNER</h2>
+      <h2 class="title-2">03</h2>
+    </div>
+    <div class="banner__panel banner__panel-4">
+      <h2 class="title-1">BANNER</h2>
+      <h2 class="title-2">04</h2>
+    </div>
+  </div>
+  <script src="script02.js"></script>
+</body>
+</html>
