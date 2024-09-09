@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: #131313;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      height: 100vh;
+    }
+    .btn,.btnChild{
+      width: 100px;
+      aspect-ratio: 1;
+      background-color: blueviolet;
+      border-radius: 50% ;
+    }
+    .btn{
+      border: none;
+      font-size: 24px;
+      color: #fff;
+      position: relative;
+    }
+    .btnChild{
+      position: absolute;
+      inset: 0 0 0 0;
+      z-index: -1;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+</head>
+<body>
+  <button class="btn">btn 1</button>
+  <button class="btn">btn 2</button>
+  <button class="btn">btn 3</button>
+  <script src="script03.js"></script>
+</body>
+</html>
