@@ -7,11 +7,49 @@ const preloader = document.querySelector('.preloader');
 const counter = document.querySelector('.counter');
 const loader = document.querySelector('.loader');
 
+gsap.to(loader,{
+  rotation:360,
+  duration:1,
+  repeat:-1,
+  ease:'linear'
+})
 
+const duration = 3000;
+const tl = gsap.timeline({
+  onComplete:function(){
+    preloader.style.display = 'none'
+  }
+});
+
+tl.to(counter,{
+  textContent:'100%',
+  duration:duration / 1000,
+  onUpdate:function(){
+    const progress = Math.round(tl.progress() * 100);
+    counter.textContent = `${progress}%`
+  }
+})
 // Cursor Animations
 const cursorFollower = document.querySelector(".cursor-follower");
 const links =  document.querySelectorAll("a");
 
+document.addEventListener('mousemove',(e) => {
+  gsap.to(cursorFollower,{
+    duration:.4,
+    x:e.clientX,
+    y:e.clientY,
+    ease:'power2.out'
+  })
+})
+
+links.forEach((link) => {
+  link.addEventListener('mouseenter',() => {
+    cursorFollower.classList.add('active')
+  })
+  link.addEventListener('mouseleave',() => {
+    cursorFollower.classList.remove('active')
+  })
+})
 
 
 // Marquee Animations
@@ -81,6 +119,27 @@ const skillsSection = document.querySelector('.skills');
 const skillsTitle = document.querySelector('.skills h2');
 const skillsList = document.querySelectorAll('.skills li');
 
+const tlSkills = gsap.timeline({
+  scrollTrigger: {
+    trigger : skillsSection,
+    start:'top center'
+  }
+})
+
+tlSkills
+  .from(skillsTitle,{
+    duration:1,
+    opacity:0,
+    y:50,
+    ease:'power1.out'
+  })
+  .from(skillsList,{
+    duration:1,
+    opacity:0,
+    y:50,
+    ease:'power1.out',
+    stagger:.2
+  })
 
 /* Contact section animations */
 const contactSection = document.querySelector('.contact');

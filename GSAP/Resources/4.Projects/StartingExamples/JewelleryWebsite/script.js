@@ -4,7 +4,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 /* Progress bar animations */
 const progress = document.querySelector('.progress');
-
+gsap.to(progress,{
+  width:'100%',
+  duration:1,
+  ease:'power1.inOut',
+  scrollTrigger:{
+    trigger:'body',
+    start:'top 0%',
+    end:'bottom 100%',
+    scrub:true
+  }
+})
 
 /* Header section animations */
 const heroImg = document.querySelector('.hero');
@@ -16,6 +26,41 @@ const dividerBottom = document.querySelector('.hero .divider-bottom');
 const logo = document.querySelector('.header .logo');
 const navLinks = document.querySelectorAll('.header li');
 
+const tlHeader = gsap.timeline()
+
+tlHeader.from([headerTitle,headerSubTitle,headerButton],{
+  duration:0.8,
+  y:100,
+  opacity:0,
+  stagger:0.2,
+  delay:.4,
+  ease: "power1.out",
+})
+
+.from(dividerTop,{
+  duration:1,
+  scaleX:0,
+  transformOrigin:'left',
+  ease: "power1.out",
+})
+.from(dividerBottom,{
+  duration:1,
+  scaleX:0,
+  transformOrigin:'right',
+  ease: "power1.out",
+},'-=1')
+
+.from([logo,navLinks],{
+  y:10,
+  opacity:0,
+  stagger:.2
+})
+
+.to(heroImg,{
+  backgroundPosition:'50% 80%',
+  duration:4,
+  ease: "power1.out",
+},1)
 
 /* About section animations */
 const aboutSection = document.querySelector('.about');
@@ -61,6 +106,21 @@ tlAbout
 const shopSection = document.querySelector('.shop');
 const shopImages = document.querySelectorAll('.shop .img-responsive');
 
+const tlShop = gsap.timeline({
+  scrollTrigger:{
+    trigger:shopSection,
+    start:'top center',
+    scrub:true
+  }
+})
+tlShop.from(shopImages,{
+  duration:1,
+  opacity:0,
+  y:150,
+  stagger:.2,
+  ease: 'power1.out'
+})
+
 
 /* Cta section animations */
 const ctaSection = document.querySelector('.cta');
@@ -98,6 +158,10 @@ const tlNew = gsap.timeline({
 });
 
 tlNew
+  .to(newSection,{
+    backgroundColor:'#5D5458',
+    duration:1
+  })
   .from(newImages, {
     opacity: 0,
     y: 100,
