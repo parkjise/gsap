@@ -56,7 +56,22 @@ links.forEach((link) => {
 const marquee = document.querySelector('.marquee');
 const marqueeContent = marquee.querySelector('div');
     
+const clonedContent = marqueeContent.innerHTML.repeat(20)
+marquee.innerHTML = clonedContent
 
+gsap.to(marquee,{
+  xPercent:50,
+  duration:3,
+  ease:'linear',
+  repeat:-1,
+  yoyo:true,
+  scrollTrigger:{
+    trigger:'body',
+    start:'top center',
+    end:'bottom center',
+    scrub:true
+  }
+})
 
 /* Header section animations */
 const headerImg = document.querySelector('.hero .img-responsive');
